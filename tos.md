@@ -1,4 +1,4 @@
-# The Circus Bot - Terms of Service
+# The SCR Auto Scheduling Bot - Terms of Service
 
 ## 1. Introduction
 Welcome to The SCR Auto Scheduling Bot ("the Bot"). By inviting, using, or interacting with the Bot, you agree to these Terms of Service. If you do not agree to these terms, do not use the Bot.
