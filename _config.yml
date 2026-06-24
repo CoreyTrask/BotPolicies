@@ -1,3 +1,6 @@
 title: Bot Policies
-description: Terms of Service and Privacy Policy for the SCR Auto Scheduling Bot
+description: Terms of Service and Privacy Policy for the SCR Auto Scheduling Bot Suite
 theme: jekyll-theme-cayman
+show_downloads: false
+github:
+  is_project_page: false
