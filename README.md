@@ -1,4 +1,4 @@
-# BotPolicies
+# Bot Policies
 
 Legal documentation, Terms of Service, and Privacy Policy for the **SCR Auto Scheduling Bot Suite**.
 
