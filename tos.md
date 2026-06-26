@@ -1,3 +1,6 @@
+---
+title: Terms of Service
+---
 > **Last Updated:** June 26, 2026
 
 # The SCR Auto Scheduling Bot Suite - Terms of Service
