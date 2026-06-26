@@ -2,6 +2,7 @@
 ---
 @import "{{ site.theme }}";
 
-.page-header {
+.page-header,
+.site-footer-credits {
   display: none;
 }
