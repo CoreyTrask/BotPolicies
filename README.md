@@ -1,9 +1,6 @@
 # Bot Policies
-
 Terms of Service and Privacy Policy for the **SCR Auto Scheduling Bot Suite**.
-
 ## 📄 Live Documents
-
 You can view the live, published versions of these documents using the links below:
 
 * **[Terms of Service](https://coreytrask.github.io/BotPolicies/tos)**
