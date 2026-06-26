@@ -1,5 +1,6 @@
 # Bot Policies
 Terms of Service and Privacy Policy for the **SCR Auto Scheduling Bot Suite**.
+
 ## 📄 Live Documents
 You can view the live, published versions of these documents using the links below:
 
