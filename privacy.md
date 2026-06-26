@@ -1,3 +1,5 @@
+> **Last Updated:** June 26, 2026
+
 # The SCR Auto Scheduling Bot Suite - Privacy Policy
 
 ## Table of Contents
