@@ -1,5 +1,9 @@
 # The SCR Auto Scheduling Bot Suite - Privacy Policy
 
+## Table of Contents
+* TOC
+{:toc}
+
 ## 1. Introduction
 This Privacy Policy outlines how the SCR auto scheduling bot suite (including "The Clown", "Guarding George", "Dispatching Dale", collectively "the Bot", "we", "us") collects, uses, and protects user data in compliance with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.
 
