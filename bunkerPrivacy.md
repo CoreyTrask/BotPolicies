@@ -19,7 +19,7 @@ We adhere strictly to the principle of data minimisation. **Normal, benign messa
 - **Velocity & Raid Tracking:** To detect rapid single-channel, multi-channel, or cross-server spam raids, the Bot temporarily holds message timestamps, Server/Channel/Message IDs, and a non-reversible MD5 content hash in memory for up to **45 seconds**, after which they are automatically purged.
 
 ### B. Persistent Data (Stored Only on Security Events or Configuration)
-Persistent data is stored in our local database (`bunker_defence_v3.db`) only in the following circumstances:
+Persistent data is stored in our local database (`bunker_defence.db`) only in the following circumstances:
 - **Security Incident Logs (`incidents`):** When a message triggers enforcement (`>= 60%` confidence), we log a unique Incident ID, Server ID (`guild_id`), Author User ID (`user_id`), a truncated snippet of the flagged message (up to 500 characters), extracted OCR/QR text (up to 500 characters), matched threat patterns, confidence score, moderation action taken, and UTC timestamp.
 - **Role Backups (`role_backups`):** When a compromised member's roles are backed up prior to a kick, ban, or quarantine, we store their User ID, Server ID, a JSON list of their assignable Role IDs, the associated Incident ID, and the timestamp so their roles can be automatically restored when they rejoin.
 - **Server Configuration & Trust Status (`guild_config` & `exempt_channels`):** Stores the Server ID, configured Alert Channel ID, exempted Staff Channel IDs, server protection preferences (`critical_action`, `auto_restore_roles`, `dm_on_kick`), and network anti-sabotage metadata (`trust_status`, strike counters, and `blacklist_reason`).
@@ -37,7 +37,7 @@ Collected data is used exclusively for:
 - **Shortlink Unfurling:** When a message contains a known URL shortener (e.g., `bit.ly`, `tinyurl.com`), the Bot may perform an automated HTTP `HEAD` request to resolve the destination domain against our phishing blacklist. No user identifiers are transmitted during this check.
 
 ## 5. Data Storage and Retention
-All persistent data is stored securely in a local SQLite database (`bunker_defence_v3.db`) with restricted host file permissions (`0600`) and an automated rolling hot backup (`bunker_defence_backup.db`), alongside rotating operational log files (`bunker_defence.log`, capped at 3 MB with a maximum of 2 backup files).
+All persistent data is stored securely in a local SQLite database (`bunker_defence.db`) with restricted host file permissions (`0600`) and an automated rolling hot backup (`bunker_defence_backup.db`), alongside rotating operational log files (`bunker_defence.log`, capped at 3 MB with a maximum of 2 backup files).
 
 - **In-Memory Queues:** Velocity and rate-limit tracking records expire automatically within **30 seconds to 15 minutes**.
 - **Automatic Deletion on Server Removal:** If the Bot leaves or is removed from a Discord server, all server-specific operational data—including incident logs, role backups, channel exemptions, false-positive votes, and uncorroborated local blacklist rules—is **automatically and immediately deleted**. (If a server was blacklisted or flagged for platform abuse, only its numeric Server ID, trust status, strike counters, and blacklist reason are retained to prevent abuse evasion).
