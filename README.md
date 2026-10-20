@@ -1,11 +1,17 @@
-# Bot Policies
-Terms of Service and Privacy Policy for the **SCR Auto Scheduling Bot Suite**.
+# Corey's Bot Policies
+Terms of Service and Privacy Policy for bots created by **corey.t** on Discord.
 
-## 📄 Live Documents
-You can view the live, published versions of these documents using the links below:
+## SCR Auto Scheduling Bot Suite
+You can view the published versions of these documents using the links below:
 
 * **[Terms of Service](https://coreytrask.github.io/BotPolicies/tos)**
 * **[Privacy Policy](https://coreytrask.github.io/BotPolicies/privacy)**
+
+## Bunker Defence Bot
+You can view the published versions of these documents using the links below:
+
+* **[Terms of Service](https://coreytrask.github.io/BotPolicies/bunkerTos)**
+* **[Privacy Policy](https://coreytrask.github.io/BotPolicies/bunkerPrivacy)**
 
 ---
 
