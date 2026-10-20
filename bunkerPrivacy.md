@@ -40,7 +40,7 @@ Collected data is used exclusively for:
 All persistent data is stored securely in a local SQLite database (`bunker_defence.db`) with restricted host file permissions (`0600`) and an automated rolling hot backup (`bunker_defence_backup.db`), alongside rotating operational log files (`bunker_defence.log`, capped at 3 MB with a maximum of 2 backup files).
 
 - **In-Memory Queues:** Velocity and rate-limit tracking records expire automatically within **30 seconds to 15 minutes**.
-- **Automatic Deletion on Server Removal:** If the Bot leaves or is removed from a Discord server, all server-specific operational data, including incident logs, role backups, channel exemptions, false-positive votes, and uncorroborated local blacklist rules—is **automatically and immediately deleted**. (If a server was blacklisted or flagged for platform abuse, only its numeric Server ID, trust status, strike counters, and blacklist reason are retained to prevent abuse evasion).
+- **Automatic Deletion on Server Removal:** If the Bot leaves or is removed from a Discord server, all server-specific operational data, including incident logs, role backups, channel exemptions, false-positive votes, and uncorroborated local blacklist rules, is **automatically and immediately deleted**. (If a server was blacklisted or flagged for platform abuse, only its numeric Server ID, trust status, strike counters, and blacklist reason are retained to prevent abuse evasion).
 - **90-Day Automated Pruning:** For active servers, both security incident logs (`incidents`) and completed role backups (`role_backups` where `restored = 1`) older than **90 days** are automatically purged every 6 hours by the Bot's maintenance task.
 
 ## 6. Data Deletion, Portability, and User Rights
