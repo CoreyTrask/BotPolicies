@@ -15,25 +15,25 @@ These Terms of Service shall be governed by and construed in accordance with the
 Bunker Defence is an automated cybersecurity and moderation utility designed to protect Discord communities from phishing links, malicious attachments, image-based scams (via Optical Character Recognition, perceptual hashing, and QR code inspection), and coordinated spam raids.
 
 By deploying the Bot in your server, you acknowledge and authorise the Bot to:
-* Inspect message text, forwarded message snapshots, embeds, and image attachments in non-exempt channels.
-* Automatically delete messages that meet or exceed the configured threat confidence threshold.
-* Automatically apply temporary timeouts (quarantine), strip assignable roles, kick, or ban accounts (including compromised moderator accounts positioned below the Bot's role hierarchy) when critical threat thresholds are reached.
-* Back up a removed member's assignable server roles and send an automated account-recovery Direct Message (where enabled) so their roles can be restored upon rejoining.
+- Inspect message text, forwarded message snapshots, embeds, and image attachments in non-exempt channels.
+- Automatically delete messages that meet or exceed the configured threat confidence threshold.
+- Automatically apply temporary timeouts (quarantine), strip assignable roles, kick, or ban accounts (including compromised moderator accounts positioned below the Bot's role hierarchy) when critical threat thresholds are reached.
+- Back up a removed member's assignable server roles and send an automated account-recovery Direct Message (where enabled) so their roles can be restored upon rejoining.
 
-## 4. Acceptable Use & Blacklist Submissions
+## 4. Acceptable Use, Blacklist Submissions & Anti-Sabotage
 Server Administrators and Moderators may add custom signatures to their server's local blacklist and submit patterns for global review via `/bunker add` or the `🛡️ Report Scam to Bot` context menu.
 
-* **Prohibited Behaviour:** You agree not to misuse the Bot. Prohibited actions include attempting to exploit, reverse-engineer, overload, or disrupt the Bot's OCR or heuristic engine; intentionally submitting benign words or false patterns to disrupt global or local blacklists; or using the Bot in violation of Discord's Terms of Service or Community Guidelines.
-* **Access Termination:** We reserve the right to revoke access to the Global Review Queue or blacklist any user or server from using the Bot at our sole discretion if abuse or malicious activity is detected.
+- **Prohibited Behaviour:** You agree not to misuse the Bot. Prohibited actions include attempting to exploit, reverse-engineer, overload, or disrupt the Bot's OCR or heuristic engine; intentionally submitting benign words, safe domains, or spam patterns to disrupt local or global blacklists; repeatedly abusing the `Mark False Positive` feature to weaken global rules; or using the Bot in violation of Discord's Terms of Service or Community Guidelines.
+- **Automated Anti-Sabotage & Server Blacklisting:** To protect the integrity of the global network, the Bot tracks rejected rule proposals and rapid false-positive button abuse. Servers that repeatedly submit irrelevant/malicious rules or attempt to sabotage global signatures will automatically have their global voting privileges revoked (`UNTRUSTED`) or be permanently blacklisted (`BLACKLISTED`), resulting in the Bot purging the server's rules, leaving the server immediately, and refusing future re-invitations.
 
 ## 5. Age Requirements
 By using the Bot, you confirm that you meet the minimum age of digital consent in your country (e.g., 13+ in the UK) as required by Discord's Terms of Service. We do not knowingly collect data from individuals under this age.
 
 ## 6. Availability, False Positives & Modifications
 The Bot is provided on an "as is" and "as available" basis without warranties of any kind.
-* While the Bot uses multi-signal corroboration to minimise false flags, no automated security system is infallible. Neither the Bot nor its developers guarantee that every malicious message will be intercepted or that legitimate messages will never be flagged.
-* Server Administrators are responsible for configuring appropriate alert channels (`/bunker setup`), channel exemptions (`/bunker exempt`), and role hierarchies, as well as reviewing incident alerts using the built-in false-positive remediation tools.
-* We reserve the right to updatethreat signatures, modify features, or suspend the Bot at any time without prior notice.
+- While the Bot uses multi-signal corroboration to minimise false flags, no automated security system is infallible. Neither the Bot nor its developers guarantee that every malicious message will be intercepted or that legitimate messages will never be flagged.
+- Server Administrators are responsible for configuring appropriate alert channels (`/bunker setup`), channel exemptions (`/bunker exempt`), and role hierarchies, as well as reviewing incident alerts using the built-in false-positive remediation tools.
+- We reserve the right to update threat signatures, modify features, or suspend the Bot at any time without prior notice.
 
 ## 7. Limitation of Liability
 To the fullest extent permitted by applicable UK law, the developers and maintainers of the Bot shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your use of or inability to use the Bot, including but not limited to damages resulting from missed scam payloads, false-positive moderation actions, or loss of server roles.
