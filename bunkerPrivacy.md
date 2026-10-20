@@ -8,7 +8,7 @@ title: Privacy Policy
 ## 1. Introduction
 This Privacy Policy explains how **Bunker Defence** ("the Bot", "we", "us") processes, stores, and protects data in compliance with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.
 
-Our lawful basis for processing data under Article 6(1)(f) of the UK GDPR is **Legitimate Interests**—specifically, protecting Discord communities and their members from fraud, phishing, malware distribution, and account takeover attacks.
+Our lawful basis for processing data under Article 6(1)(f) of the UK GDPR is **Legitimate Interests**, specifically, protecting Discord communities and their members from fraud, phishing, malware distribution, and account takeover attacks.
 
 ## 2. Data Collection & Processing
 We adhere strictly to the principle of data minimisation. **Normal, benign messages and images are evaluated in volatile memory (RAM) only and are never written to our database.**
